@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Anand - Data Engineering</title>
+    <meta name="description" content="Aman Anand - Data Engineer specializing in cloud-native big data architectures, Apache Spark, Snowflake, and enterprise data migration. Proven track record in scalable data solutions." />
+    <meta name="keywords" content="Data Engineer, Apache Spark, Snowflake, Big Data, Cloud Migration, Data Architecture, ETL, Data Pipeline" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Aman Anand - Data Engineering Portfolio" />
+    <meta property="og:description" content="Data Engineer specializing in cloud-native big data architectures and scalable data solutions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amananand.dev" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aman Anand - Data Engineering Portfolio" />
+    <meta name="twitter:description" content="Data Engineer specializing in cloud-native big data architectures" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" />
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aman Anand",
+        "jobTitle": "Data Engineer",
+        "description": "Cloud-native data engineer specializing in big data solutions",
+        "url": "https://amananand.dev",
+        "sameAs": [
+            "https://linkedin.com/in/amananand",
+            "https://github.com/amananand"
+        ],
+        "knowsAbout": ["Apache Spark", "Snowflake", "Big Data", "Cloud Migration", "Data Architecture"]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Famananand1332back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-50">Skip to main content</a>
+    
+    <!-- Sticky Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-border transition-all duration-300">
+        <div class="container-max">
+            <div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-primary">Aman Anand</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="nav-link text-primary font-semibold border-b-2 border-primary">Home</a>
+                    <a href="about.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">About</a>
+                    <a href="skills.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Skills</a>
+                    <a href="projects.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="experience.html" class="nav-link text-text-secondary hover:text-primary transition-colors duration-300">Experience</a>
+                    <a href="contact.html" class="btn-primary">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors duration-300" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
+                <div class="px-4 py-4 space-y-4">
+                    <a href="homepage.html" class="block text-primary font-semibold">Home</a>
+                    <a href="about.html" class="block text-text-secondary hover:text-primary transition-colors duration-300">About</a>
+                    <a href="skills.html" class="block text-text-secondary hover:text-primary transition-colors duration-300">Skills</a>
+                    <a href="projects.html" class="block text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="experience.html" class="block text-text-secondary hover:text-primary transition-colors duration-300">Experience</a>
+                    <a href="contact.html" class="block btn-primary text-center">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Animated Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+                <!-- Data Flow Animation Background -->
+                <div class="absolute inset-0 opacity-10">
+                    <svg class="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </pattern>
+                            <linearGradient id="dataFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0"/>
+                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1"/>
+                                <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)" class="text-primary"/>
+                        
+                        <!-- Animated Data Flow Lines -->
+                        <g class="animate-pulse-slow">
+                            <path d="M0,200 Q300,150 600,200 T1200,200" stroke="url(#dataFlow)" stroke-width="2" fill="none">
+                                <animate attributeName="stroke-dasharray" values="0,1000;1000,0;0,1000" dur="4s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M0,400 Q300,350 600,400 T1200,400" stroke="url(#dataFlow)" stroke-width="2" fill="none">
+                                <animate attributeName="stroke-dasharray" values="1000,0;0,1000;1000,0" dur="5s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M0,600 Q300,550 600,600 T1200,600" stroke="url(#dataFlow)" stroke-width="2" fill="none">
+                                <animate attributeName="stroke-dasharray" values="500,500;0,1000;500,500" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                        </g>
+                        
+                        <!-- Data Nodes -->
+                        <circle cx="200" cy="200" r="4" fill="#06b6d4" class="animate-pulse">
+                            <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="600" cy="400" r="4" fill="#1e3a8a" class="animate-pulse">
+                            <animate attributeName="r" values="4;8;4" dur="2.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="1000" cy="600" r="4" fill="#06b6d4" class="animate-pulse">
+                            <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Professional Badge -->
+                    <div class="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-border mb-8 animate-fade-in">
+                        <div class="w-2 h-2 bg-success rounded-full mr-2 animate-pulse"></div>
+                        <span class="text-sm font-medium text-text-secondary">Available for new opportunities</span>
+                    </div>
+                    
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
+                        <span class="text-gradient-primary">Aman Anand</span>
+                        <br />
+                        <span class="text-text-primary">Data Engineering</span>
+                        <!-- <br /> -->
+                        <!-- removed it <span class="text-gradient-accent">Architect</span> -->
+                    </h1>
+                    
+                    <!-- Value Proposition -->
+                    <p class="text-xl sm:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
+                        Data Engineer with <span class="text-primary font-semibold">2+ years of experience</span> building scalable and efficient data platforms using Apache Spark, Scala, and Snowflake. Skilled in workflow orchestration with Apache Airflow, containerization with Docker, and deployment on Kubernetes. Passionate about modern data architectures and optimizing cloud data pipelines.
+                    </p>
+                    
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 animate-slide-up" style="animation-delay: 0.4s;">
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-border hover:shadow-lg transition-all duration-300">
+                            <div class="text-3xl font-bold text-primary mb-2">2+</div>
+                            <div class="text-text-secondary">Years Experience</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-border hover:shadow-lg transition-all duration-300">
+                            <div class="text-3xl font-bold text-accent mb-2">50TB+</div>
+                            <div class="text-text-secondary">Data Migrated</div>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-border hover:shadow-lg transition-all duration-300">
+                            <div class="text-3xl font-bold text-primary mb-2">99.9%</div>
+                            <div class="text-text-secondary">Pipeline Uptime</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Role-based CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in" style="animation-delay: 0.6s;">
+                        <!-- Primary CTA for Recruiters -->
+                        <a href="contact.html" class="btn-primary group flex items-center space-x-2 px-8 py-4 text-lg">
+                            <span>Lets Connect</span>
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                        
+                        <!-- Secondary CTA for Technical Exploration -->
+                        <a href="projects.html" class="btn-secondary group flex items-center space-x-2 px-8 py-4 text-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2h-2a2 2 0 00-2 2v2M7 7h10"/>
+                            </svg>
+                            <span>View Projects</span>
+                        </a>
+                        
+                        <!-- Tertiary CTA for Resume -->
+                        <a href="javascript:void(0)" onclick="downloadResume()" class="text-primary hover:text-primary-700 font-semibold flex items-center space-x-2 px-4 py-2 border border-primary rounded-lg hover:bg-primary-50 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#expertise" class="flex flex-col items-center text-text-muted hover:text-primary transition-colors duration-300">
+                    <span class="text-sm mb-2">Scroll to explore</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Core Expertise Preview -->
+        <section id="expertise" class="section-padding bg-surface">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Core Expertise</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                        Specialized in modern data stack technologies that power enterprise-scale solutions
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Apache Spark -->
+                    <div class="card group hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg mb-4 mx-auto">
+                            <img src="https://spark.apache.org/images/spark-logo-trademark.png" alt="Apache Spark" class="w-10 h-10" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Apache Spark</h3>
+                        <p class="text-text-secondary text-center">Distributed computing and large-scale data processing optimization</p>
+                    </div>
+                    
+                    <!-- Snowflake -->
+                    <div class="card group hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg mb-4 mx-auto">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Snowflake</h3>
+                        <p class="text-text-secondary text-center">Cloud data warehouse architecture and performance tuning</p>
+                    </div>
+                    
+                    <!-- AWS -->
+                    <div class="card group hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg mb-4 mx-auto">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.75 11.35a4.32 4.32 0 0 0-.79-.08 4.34 4.34 0 0 0-4.34 4.34 4.34 4.34 0 0 0 4.34 4.34 4.34 4.34 0 0 0 4.34-4.34 4.32 4.32 0 0 0-.08-.79l-3.47-3.47z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Kubernetes</h3>
+                        <p class="text-text-secondary text-center">Cloud-native data pipeline architecture and deployment</p>
+                    </div>
+                    
+                    <!-- Python -->
+                    <div class="card group hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-yellow-500 rounded-lg mb-4 mx-auto">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.26-.02.21-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25c-.2 0-.38.09-.5.25-.12.16-.18.38-.18.61 0 .22.06.44.18.6.12.16.3.25.5.25.2 0 .38-.09.5-.25.12-.16.18-.38.18-.6 0-.23-.06-.45-.18-.61-.12-.16-.3-.25-.5-.25z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Python</h3>
+                        <p class="text-text-secondary text-center">Advanced data processing and automation frameworks</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="skills.html" class="btn-accent">Explore All Skills</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Stats -->
+        <section class="section-padding bg-white">
+            <div class="container-max">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="group">
+                        <div class="text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">10+</div>
+                        <div class="text-text-secondary">Projects Delivered</div>
+                    </div>
+                    <div class="group">
+                        <div class="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform duration-300">2</div>
+                        <div class="text-text-secondary">Cloud Platforms</div>
+                    </div>
+                    <div class="group">
+                        <div class="text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">4</div>
+                        <div class="text-text-secondary">Certifications</div>
+                    </div>
+                    <div class="group">
+                        <div class="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                        <div class="text-text-secondary">System Reliability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Projects Preview -->
+        <section class="section-padding bg-gradient-to-br from-surface to-white">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Featured Projects</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                        Real-world implementations showcasing technical depth and business impact
+                    </p>
+                </div>
+                
+                <!-- Responsive cards wrapper: auto-fit ensures wrapping; max-w-6xl centers reasonable width -->
+                <div class="mx-auto max-w-6xl grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Spark 2 to Spark 3 Migration (Preview) -->
+                    <div class="card group hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="aspect-video bg-gradient-to-br from-primary to-accent rounded-lg mb-6 overflow-hidden flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-16 h-16 text-white opacity-90" fill="none" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7l-5 5 5 5M16 7l5 5-5 5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Spark 2 → Spark 3 Migration</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">POC migration enabling adaptive execution and compatibility across Snowflake + HBase workloads.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Spark</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">Scala</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">HBase</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="projects.html" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300 inline-flex items-center text-sm">View Details →</a>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Migration (Azure to AliCloud) (Preview) -->
+                    <div class="card group hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="aspect-video bg-gradient-to-br from-accent to-primary rounded-lg mb-6 overflow-hidden flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-16 h-16 text-white opacity-90" fill="none" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 014-4 5 5 0 019.9-1H18a3 3 0 010 6H9" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 12l-3 3 3 3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Cloud Migration (Azure → AliCloud)</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Re-platformed regional pipeline; replaced Oozie with Airflow for maintainable orchestration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Airflow</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">Spark</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">HBase</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="projects.html" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300 inline-flex items-center text-sm">View Details →</a>
+                        </div>
+                    </div>
+
+                    <!-- Database Optimization (Preview) -->
+                    <div class="card group hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <div class="aspect-video bg-gradient-to-br from-primary-600 to-accent-400 rounded-lg mb-6 overflow-hidden flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-16 h-16 text-white opacity-90" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="7" ry="3" />
+                                <path d="M5 5v6c0 1.657 3.134 3 7 3s7-1.343 7-3V5" />
+                                <path d="M5 11v6c0 1.657 3.134 3 7 3s7-1.343 7-3v-6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Database Optimization (R&amp;D)</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Evaluating TimescaleDB & Iceberg vs HBase for cost + performance in non-Snowflake regions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">TimescaleDB</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary text-xs rounded-full">Iceberg</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full">HBase</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="projects.html" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300 inline-flex items-center text-sm">View Details →</a>
+                        </div>
+                    </div>
+
+                    <!-- add more here  -->
+
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="projects.html" class="btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <!-- <section class="section-padding bg-gradient-to-r from-primary to-primary-800 text-white">
+            <div class="container-max text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Data Infrastructure?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                    Let's discuss how my expertise in cloud-native data architecture can drive your business transformation
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                        Start a Conversation
+                    </a>
+                    <a href="javascript:void(0)" onclick="downloadResume()" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container-max">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-bold">Aman Anand</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Data Engineer with 2+ years of experience building scalable data platforms using Apache Spark, Scala, Snowflake, Airflow, Docker & Kubernetes.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/aman-anand-572359191" class="text-gray-300 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/aman-anand17" class="text-gray-300 hover:text-white transition-colors duration-300" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:amananand1701@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-300" aria-label="Email">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="skills.html" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a></li>
+                        <li><a href="experience.html" class="text-gray-300 hover:text-white transition-colors duration-300">Experience</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📧 amananand1701@gmail.com</li>
+                        <li>� LinkedIn: <a href="https://linkedin.com/in/aman-anand-572359191" class="text-accent hover:text-accent-400 transition-colors duration-300">/aman-anand-572359191</a></li>
+                        <li>🧪 GitHub: <a href="https://github.com/aman-anand17" class="text-accent hover:text-accent-400 transition-colors duration-300">/aman-anand17</a></li>
+                        <li>📍 Pune, India</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Aman Anand. All rights reserved. | Built with modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.remove('bg-white/90');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-white');
+                navbar.classList.add('bg-white/90');
+            }
+        });
+        
+        // Resume download function
+        function downloadResume() {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = '#'; // Replace with actual resume URL
+            link.download = 'Aman_Anand_Resume.pdf';
+            link.click();
+            
+            // Show feedback
+            alert('Resume download initiated! (This is a demo - replace with actual resume file)');
+        }
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Performance optimization - lazy load images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver';
+            document.head.appendChild(script);
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
